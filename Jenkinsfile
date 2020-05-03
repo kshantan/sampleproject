@@ -9,7 +9,7 @@ pipeline {
 
     stage('build') {
       steps {
-        sh '''echo M2_HOME=/production/apps/apache-maven-3.6.3       
+        sh '''M2_HOME=/production/apps/apache-maven-3.6.3       
 export  PATH=$PATH:M2_HOME/bin
 echo $PATH
 mvn -version
