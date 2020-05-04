@@ -25,7 +25,7 @@ mvn clean install'''
 
     stage('deploy') {
       steps {
-        sh 'sudo cp -R  target/*.war  /usr/share/tomcat/webapps/'
+        sh 'sudo cp -R  target/*.war  /var/lib/tomcat/webapps/'
       }
     }
 
